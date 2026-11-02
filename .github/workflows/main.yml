@@ -32,5 +32,7 @@ jobs:
         run: |
           echo "Hello world from ${{github.actor}}."
           echo "Current branch is ${{github.ref}}."
-          
+          echo "My API key will be ${{ secrets.APIKEY }}."
+          echo "My secret will be ${{ vars.RAHSIA }}."
+                    
         shell: bash
