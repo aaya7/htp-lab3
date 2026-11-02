@@ -1,9 +1,9 @@
 #A first workflow to play around with the editor
 name: My First Workflow
 on: 
-  push:
-    branches: 
-      -main
+  # push:
+  #   branches: 
+  #     -main
   workflow_dispatch: 
 jobs:
   first_job:
