@@ -34,5 +34,8 @@ jobs:
           echo "Current branch is ${{github.ref}}."
           echo "My API key will be ${{ secrets.APIKEY }}."
           echo "My secret will be ${{ vars.RAHSIA }}."
-                    
+        env: 
+          APIKEY: ${{ secrets.APIKEY }}
+          RAHSIA: ${{ vars.RAHSIA }}
+          
         shell: bash
