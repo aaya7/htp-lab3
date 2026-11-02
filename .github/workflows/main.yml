@@ -32,11 +32,11 @@ jobs:
         run: |
           echo "Hello world from ${{github.actor}}."
           echo "Current branch is ${{github.ref}}."
-          echo "My API key will be ${{ secrets.APIKEY }}."
-          echo "My secret will be ${{ vars.RAHSIA }}."
+          echo "My API key will be '${{ secrets.APIKEY }}'."
+          echo "My secret will be '${{ vars.RAHSIA }}'."
 
-          echo "My API key will be ${{ secrets.API_KEY }}."
-          echo "My secret will be ${{ vars.MYRAHSIA }}."
+          echo "My API key will be '${{ env.API_KEY }}'."
+          echo "My secret will be '${{ env.MYRAHSIA }}'."
         env: 
           API_KEY: ${{ secrets.APIKEY }}
           MYRAHSIA: ${{ vars.RAHSIA }}
