@@ -31,4 +31,6 @@ jobs:
         if: github.event_name == 'pull_request'
         env:
             PR_TITLE: ${{ github.event.pull_request.title }}
-        run: echo "Demo PR title is '$PR_TITLE'."
+        run: |
+            echo "Demo PR title is ${{ github.event.pull_request.title }}."
+            echo "Demo PR title is '$PR_TITLE'."
